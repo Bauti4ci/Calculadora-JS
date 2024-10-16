@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: start;
+}
+
+#cuerpo {
+    width: 200px;
+    height: 330px;
+    background-color: rgb(0, 0, 0);
+    align-content: center;
+    margin-top: 15px;
+}
+
+#teclas {
+
+    display: flexbox;
+    flex-direction: row;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    align-content: center;
+    text-align: center;
+
+}
+
+#contenedor {
+    align-content: center;
+    text-align: center;
+}
+
+.contNumeros {
+    width: 180px;
+    height: 50px;
+    border: 0px;
+    color: white;
+    background-color: black;
+    text-align: right;
+}
+
+.contNumeros:focus {
+    outline: none;
+}
+
+#vaciar {
+    color: rgb(249, 65, 18);
+}
+
+.teclaOperadores {
+    color: rgb(141, 204, 47);
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(65, 65, 65);
+    margin: 2px;
+}
+
+.tecla {
+    width: 3em;
+    height: 3em;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    margin: 2px;
+}
+
+.tecla:hover {
+    background-color: rgb(96, 96, 96);
+}
+
+
+
+.teclaOperadores:hover {
+    background-color: rgb(96, 96, 96);
+}
+
+#botonIgual:hover {
+    background-color: rgb(166, 223, 81);
+}
+
+#botonIgual {
+    width: 6em;
+    margin: auto 5px;
+    background-color: rgb(141, 204, 47);
+}
+
+.tecla:active {
+    background-color: rgb(46, 46, 46);
+}
+
+.tecla:active .texto {
+    font-size: 95%;
+}
+
+.teclaOperadores:active {
+    background-color: rgb(46, 46, 46);
+}
+
+.teclaOperadores:active .texto {
+    font-size: 95%;
+}
+
+#botonIgual:active {
+    background-color: rgb(108, 173, 10);
+}
+
+#botonIgual:active .texto {
+    font-size: 95%;
+
+}
+
+.separador {
+    background-color: rgb(0, 0, 0);
+    margin: 3px 4px 5px 4px;
+    border-bottom: 1px solid white;
+    height: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#historial {
+    display: none;
+    width: 200px;
+    height: 330px;
+    margin-left: 104px;
+    margin-top: 60px;
+    color: white;
+}
+
+#listaHistorial {
+    overflow-y: auto;
+    height: 220px;
+    font-size: 80%;
+    width: 196px;
+    scrollbar-width: thin;
+    /* Ancho delgado */
+    scrollbar-color: rgb(141, 204, 47) transparent;
+    /* Color del pulgar y área de seguimiento */
+}
+
+.separador2 {
+    background-color: rgb(0, 0, 0);
+    margin: 5px 4px 10px 4px;
+    border-bottom: 1px solid white;
+    height: 5px;
+}
+
+#mini {
+    width: 11px;
+    height: 11px;
+    padding: 1px;
+}
+
+#mini2 {
+    width: 13px;
+    height: 10px;
+    padding: 1px;
+}
+
+h4 {
+    color: rgb(141, 204, 47);
+    margin: 1px;
+}
+
+#listaHistorial::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 5px;
+    /* Redondez del pulgar */
+}
+
+#vacioo {
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    padding: 6px;
+}
+
+.miniBotones {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.miniBotones:active {
+    background-color: rgb(46, 46, 46);
+}
+
+#der {
+    margin-left: auto;
+}
+
+#iz {
+    margin-left: 5px;
+}
+
+#miniBotones {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 195px;
+}
